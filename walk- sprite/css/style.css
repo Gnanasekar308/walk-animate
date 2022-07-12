@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#bgimg{
+    width: 160px;
+    height: 282px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: solid 2px black;
+}
+ #walk{
+    width: 1280px;
+    height: auto;
+    animation-name: walking;
+    transform: translateX(0px);  
+    animation-duration: 0.8s;
+    animation-timing-function: steps(8);
+    animation-iteration-count:infinite ;
+
+}
+@keyframes walking{
+    100%{transform: translateX(-1280px);}
+}  
+
